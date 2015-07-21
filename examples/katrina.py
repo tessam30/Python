@@ -14,6 +14,7 @@ print text_clean
 
 # Q2. Count the number of times keywords appear in the text
 wrd_lst = ["killed", "destroyed", "death", "devastating"]
+# Set a text_count variable as a float to avoid rounding issues later on
 text_count = 0.0
 for word in wrd_lst:
     print text_clean.count(word) 
@@ -24,6 +25,7 @@ print text_count
 is_urgent = text_clean.startswith("urgent")
 print is_urgent
 
+# Note hte use of split() to recover total number of words (not characters)
 no_words = len(text.split())
 print no_words
 
